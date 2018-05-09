@@ -1,0 +1,14 @@
+{
+  "presets": [
+    ["env", { "modules": false }],
+    "stage-2", "stage-1", "react"
+  ],
+  "plugins": ["transform-runtime", "transform-vue-jsx"],
+  "comments": false,
+  "env": {
+    "test": {
+      "presets": ["env", "stage-2", "stage-1", "react"],
+      "plugins": [ "istanbul" ]
+    }
+  }
+}
